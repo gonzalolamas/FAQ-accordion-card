@@ -9,6 +9,7 @@
 .attribution {
      font-size: 20px; 
      text-align: center;
+     margin-top: 250px;
     }
 
 
@@ -24,44 +25,50 @@ body{
 
 @media screen and (max-width:1440px){
      .contenedor{
-          height: 500px;
+          position: relative;
+          height: auto;
+          min-height: 500px;
           width: 1000px;
           background-color: white;
           border-radius: 20px;
           margin: 100px auto;
-          overflow: hidden;
+          z-index: 15;
+          background-image: url("images/bg-pattern-desktop.svg");
+          background-repeat: no-repeat;
+          background-position:-530px -300px;
      }
 
      .imagen-mujer{
-          position: relative;
-          top: 50px;
-          right: 80px;
-          z-index: 8;
-     }
-
-     .caja{
           position: absolute;
-          bottom: 47%;
-          left: 4%;
+          top: 50px;
+          left: -5%;
           z-index: 10;
      }
 
-     .fondo{
+     .imagen-caja{
           position: absolute;
-          bottom:15%;
-          right: 60%;
-          z-index: 1;
+          bottom: 25%;
+          left: -10%;
+          z-index: 30;
      }
 
-     .contenido-secundario{
-          position: absolute;
-          left: 48%;
-          top: 20%;
+     h1{
+          margin-bottom: 20px;
+          text-align: center;
+          font: bold;
+          font-size: 3rem;
+     }
+
+     .contenido-secundario{/* 
+          position: absolute; */
+          position: relative;
+          left: 480px;
+          top: 50px;
           width: 500px;
           height: auto;
      }
 
-     button.accordion {
+    button.accordion {
     background-color: white;
     cursor: pointer;
     padding: 18px;
@@ -76,6 +83,9 @@ body{
      button.accordion.active, button.accordion:hover {
      background-color: white;
      font-weight: bold;
+     color: orange;
+     border: 1px solid gray;
+     border-radius: 1rem;
      }
 
      button.accordion:after {
@@ -107,56 +117,59 @@ body{
 }
 
 @media screen and (max-width:900px){
+     
+     .attribution {
+          font-size: 20px; 
+          text-align: center;
+          margin-top: -90px;
+    }
+
+     .attribution a {
+          color: hsl(228, 45%, 44%); 
+    }
      .contenedor{
+          position: relative;
           height: 600px;
           width: 500px;
           background-color: white;
           border-radius: 20px;
-          overflow: visible;
+          margin: 100px auto;
+          z-index: 5;
+          background-image: url("images/bg-pattern-mobile.svg");
+          background-repeat: no-repeat;
+          background-position:130px 0px;
      }
 
      .imagen-mujer{
+          width: 250px;
+          height: auto;
           position: absolute;
-          left: 35%;
-          top: 2%;
+          left: 25%;
+          top: -19%;
           z-index: 8;
      }
 
-     .tamaño-imagen-mujer{
-          width: 200px;
-          height: auto;
-     }
-
-     .caja{
-          position: absolute;
-          top: 8%;
-          left: 34%;
-          z-index: 10;
-     }
-
-     .tamaño-caja{
+     .imagen-caja{
           width: 90px;
           height: auto;
-     }
-
-     .fondo{
           position: absolute;
-          top: -1%;
-          left: 35%;
-          z-index: 1;
-     }
-
-     .fondo-mobile{
-          width: 200px;
-          height: auto;
+          top: -6%;
+          left: 25%;
+          z-index: 10;
      }
 
      .contenido-secundario{
           position: absolute;
-          left: 25%;
+          left: 15%;
           top: 25%;
           width: 375px;
           height: auto;
+     }
+     h1{
+          margin-bottom: 20px;
+          text-align: center;
+          font: bold;
+          font-size: 3rem;
      }
 
      button.accordion {
@@ -174,6 +187,7 @@ body{
      button.accordion.active, button.accordion:hover {
            background-color: white;
            font-weight: bold;
+           color: orange;
            }
       
     button.accordion:after {
@@ -184,8 +198,8 @@ body{
            }
       
      button.accordion.active:after {
-     content: url('images/icon-arrow-down.svg');
-     transform:rotate(190deg);
+          content: url('images/icon-arrow-down.svg');
+          transform:rotate(190deg);
            }
       
       div.panel {

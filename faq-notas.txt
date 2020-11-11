@@ -1,0 +1,18 @@
+* Frontend Mentor Challenge: FAQ accordion card main *
+
+- Cambiar el estilo del contenedor blanco usando height: auto y min-height: 500px; De esta forma el contenedor adapta su tamaño a medida que vamos desplegando cada respuesta. 
+
+- No al <br> como separador de línea (en este caso).
+
+- Sí al uso de <hr>, línea que se ve en el diseño de frontend mentor. También puede usarse la propiedad border para lograr el mismo efecto.
+
+- No usar h2 conteniendo un botón. Usar solo el botón o anidar el h2 dentro del botón. Dar estilo al botón.
+
+- Cuidar el uso de position: absolute para evitar que se pisen las imágenes. Usar un contenedor con position: relative (padre) y la imagen que contenga (hijo), en absolute.
+
+- Usar 2 contenedores por separado, uno para las imágenes y otro para el accordion.
+
+
+* Funciones *
+
+Sugerencias: comentar los pasos a seguir para luego ir desplegando el código. De esta forma luego podemos ver mejor cómo ir adaptando la función de ser necesario. 
